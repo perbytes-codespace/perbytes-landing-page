@@ -35,7 +35,7 @@ export default function Home() {
       </div>
       <footer className='flex align-center items-center text-white z-0 absolute bottom-0'>
           <p>
-            Perbytes Co. &copy; 2023 All rights reserved.
+            Perbytes Systems, Inc. &copy; 2023 All rights reserved.
           </p>
       </footer>
     </main>
