@@ -62,9 +62,6 @@ export default function Home() {
         <p className="fixed left-0 top-0 text-2xl font-semibold flex w-full justify-center text-2xl pb-6 pt-8 backdrop-blur-2xl dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:p-4">
           Perbytes
         </p>
-        {/* <div className="contact">
-          <p className="text-lg px-4 border border-1 rounded-lg">Contact</p>
-        </div> */}
       </div>
       <div className="relative flex flex-col align-center items-center justify-center my-32 px-[25rem] w-full">
         {/* Content */}
@@ -73,38 +70,36 @@ export default function Home() {
           <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
             <div className="flex flex-col">
               <span className="countdown font-mono text-8xl">
-                <span style={{ "--value": days !== prevDays ? days : prevDays }}></span>
+                <span style={{ '--value': days !== prevDays ? days : prevDays } as React.CSSProperties}></span>
               </span>
               days
             </div>
-            <span className='text-8xl'>:</span>
+            <span className="text-8xl">:</span>
             <div className="flex flex-col">
               <span className="countdown font-mono text-8xl">
-                <span style={{ "--value": hours !== prevHours ? hours : prevHours }}></span>
+                <span style={{ '--value': hours !== prevHours ? hours : prevHours } as React.CSSProperties}></span>
               </span>
               hours
             </div>
-            <span className='text-8xl'>:</span>
+            <span className="text-8xl">:</span>
             <div className="flex flex-col">
               <span className="countdown font-mono text-8xl">
-                <span style={{ "--value": minutes !== prevMinutes ? minutes : prevMinutes }}></span>
+                <span style={{ '--value': minutes !== prevMinutes ? minutes : prevMinutes } as React.CSSProperties}></span>
               </span>
               min
             </div>
-            <span className='text-8xl'>:</span>
+            <span className="text-8xl">:</span>
             <div className="flex flex-col">
               <span className="countdown font-mono text-8xl">
-                <span style={{ "--value": seconds !== prevSeconds ? seconds : prevSeconds }}></span>
+                <span style={{ '--value': seconds !== prevSeconds ? seconds : prevSeconds } as React.CSSProperties}></span>
               </span>
               sec
             </div>
           </div>
         </div>
       </div>
-      <footer className='flex align-center items-center text-white z-0 absolute bottom-0'>
-          <p>
-            Perbytes Systems, Inc. &copy; 2023 All rights reserved.
-          </p>
+      <footer className="flex align-center items-center text-white z-0 absolute bottom-0">
+        <p>Perbytes Systems, Inc. &copy; 2023 All rights reserved.</p>
       </footer>
     </main>
   );
