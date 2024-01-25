@@ -2,49 +2,55 @@
 import { useState, useEffect, useRef } from 'react';
 
 export default function Home() {
-  const countDownDate = new Date('January 30, 2024 23:59:59').getTime();
-  const nowRef = useRef(new Date().getTime());
-  const [distance, setDistance] = useState(countDownDate - nowRef.current);
-  const [prevDays, setPrevDays] = useState(0);
-  const [prevHours, setPrevHours] = useState(0);
-  const [prevMinutes, setPrevMinutes] = useState(0);
-  const [prevSeconds, setPrevSeconds] = useState(0);
+    const countDownDate = new Date('January 30, 2024 23:59:59').getTime();
+    // Server side now
+    const [prevDays, setPrevDays] = useState(0);
+    const [prevHours, setPrevHours] = useState(0);
+    const [prevMinutes, setPrevMinutes] = useState(0);
+    const [prevSeconds, setPrevSeconds] = useState(0);
+    let [distance, setDistance] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nowRef.current = new Date().getTime();
-      const newDistance = countDownDate - nowRef.current;
-      setDistance(newDistance);
+    useEffect(() => {
+      const interval = setInterval(() => {
+        let nowRef = new Date().getTime()
+        distance = countDownDate - nowRef;
+        console.log(nowRef, "Now")
+        setDistance(distance);
 
-      if (newDistance < 0) {
+        if (distance < 0) {
+          clearInterval(interval)
+        }
+
+        if (distance < 0) {
+          clearInterval(interval);
+        }
+      }, 1000);
+
+      return () => {
         clearInterval(interval);
+      };
+    }, [countDownDate]);
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    useEffect(() => {
+      if (days !== prevDays) {
+        setPrevDays(days);
       }
-    }, 1000);
+      if (hours !== prevHours) {
+        setPrevHours(hours);
+      }
+      if (minutes !== prevMinutes) {
+        setPrevMinutes(minutes);
+      }
+      if (seconds !== prevSeconds) {
+        setPrevSeconds(seconds);
+      }
+    }, [days, hours, minutes, prevDays, prevHours, prevMinutes, prevSeconds, seconds]);
 
-    return () => {
-      clearInterval(interval);
-    };
-  }, [countDownDate]);
-
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  useEffect(() => {
-    if (days !== prevDays) {
-      setPrevDays(days);
-    }
-    if (hours !== prevHours) {
-      setPrevHours(hours);
-    }
-    if (minutes !== prevMinutes) {
-      setPrevMinutes(minutes);
-    }
-    if (seconds !== prevSeconds) {
-      setPrevSeconds(seconds);
-    }
-  }, [days, hours, minutes, prevDays, prevHours, prevMinutes, prevSeconds, seconds]);
 
 
 
