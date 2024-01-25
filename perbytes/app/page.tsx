@@ -1,9 +1,10 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export default function Home() {
   const countDownDate = new Date('January 30, 2024 23:59:59').getTime();
-  const [distance, setDistance] = useState(countDownDate - new Date().getTime());
+  const nowRef = useRef(new Date().getTime());
+  const [distance, setDistance] = useState(countDownDate - nowRef.current);
   const [prevDays, setPrevDays] = useState(0);
   const [prevHours, setPrevHours] = useState(0);
   const [prevMinutes, setPrevMinutes] = useState(0);
@@ -11,8 +12,8 @@ export default function Home() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const now = new Date().getTime();
-      const newDistance = countDownDate - now;
+      nowRef.current = new Date().getTime();
+      const newDistance = countDownDate - nowRef.current;
       setDistance(newDistance);
 
       if (newDistance < 0) {
@@ -44,6 +45,7 @@ export default function Home() {
       setPrevSeconds(seconds);
     }
   }, [days, hours, minutes, prevDays, prevHours, prevMinutes, prevSeconds, seconds]);
+
 
 
   return (
