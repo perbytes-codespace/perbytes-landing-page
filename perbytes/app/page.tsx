@@ -101,12 +101,12 @@ export default function Home() {
       <div className='relative flex flex-col align-center items-center justify-center my-32 px-[25rem] w-full'>
         {/* Content */}
         <div className='z-10 text-center'>
-          <p className='text-4xl font-semibold mb-8'>
+          <p className='text-4xl font-mono font-bold mb-8'>
             Soon!
           </p>
           <div className='grid grid-flow-col gap-5 text-center auto-cols-max'>
-            <div className='flex flex-col'>
-              <span className='countdown font-mono text-8xl'>
+            <div className='flex flex-col font-sans'>
+              <span className='countdown font-sans text-8xl'>
                 <span
                   style={
                     {
@@ -124,8 +124,8 @@ export default function Home() {
             <span className='text-8xl'>
               :
             </span>
-            <div className='flex flex-col'>
-              <span className='countdown font-mono text-8xl'>
+            <div className='flex flex-col font-sans'>
+              <span className='countdown font-sans text-8xl'>
                 <span
                   style={
                     {
@@ -143,8 +143,8 @@ export default function Home() {
             <span className='text-8xl'>
               :
             </span>
-            <div className='flex flex-col'>
-              <span className='countdown font-mono text-8xl'>
+            <div className='flex flex-col font-sans'>
+              <span className='countdown font-sans text-8xl'>
                 <span
                   style={
                     {
@@ -157,13 +157,13 @@ export default function Home() {
                   }
                 ></span>
               </span>
-              min
+              minutes
             </div>
             <span className='text-8xl'>
               :
             </span>
-            <div className='flex flex-col'>
-              <span className='countdown font-mono text-8xl'>
+            <div className='flex flex-col font-sans'>
+              <span className='countdown font-sans text-8xl'>
                 <span
                   style={
                     {
@@ -176,7 +176,7 @@ export default function Home() {
                   }
                 ></span>
               </span>
-              sec
+              seconds
             </div>
           </div>
         </div>
