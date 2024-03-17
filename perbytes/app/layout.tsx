@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { Syne } from 'next/font/google'
+import { Inter } from 'next/font/google'
 
-const SyneFont = Syne({
-  weight: ['400', '700'],
+const SyneFont = Inter({
+  weight: ['100' , '200', '300', '500', '600', '400', '700'],
   subsets: ['latin'],
 })
 

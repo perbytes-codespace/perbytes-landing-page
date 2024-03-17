@@ -7,5 +7,6 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   plugins: [require("daisyui")],
+  darkMode: "media",
 }
 export default config
