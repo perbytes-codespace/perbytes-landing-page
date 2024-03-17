@@ -34,7 +34,7 @@ export default function Home() {
             <p className="text-[#032B3A] text-3xl font-semibold">
               Welcome to PerBytes
             </p>
-            <p className="sm:text-2xl text-lg font-light">
+            <p className="sm:text-2xl text-lg font-light dark:text-gray-500">
               At PerBytes, we&apos;re not just developers; we&apos;re architects
               of digital experiences. We breathe life into ideas, turning
               concepts into cutting-edge software solutions. Whether you&apos;re
@@ -55,15 +55,15 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-[80px] mt-4 lg:px-[193px]">
               <div className="flex gap-[24px]">
                 <div className="h-20 w-20 p-10 rounded-lg bg-[#FFDD1F] flex justify-center items-center text-2xl">
-                  <span>
+                  <span className="text-[#032B3A] text-2xl">
                     <PiGearFineLight />
                   </span>
                 </div>
                 <div className="flex flex-col text-left">
-                  <p className="font-semibold text-[24px]">
+                  <p className="font-semibold text-[24px] text-[#032B3A]">
                     Cutting-Edge Technologies
                   </p>
-                  <p className="text-[18px] leading-[24.3px] font-light">
+                  <p className="text-[18px] leading-[24.3px] font-light text-gray-600">
                     Whether you need to streamline operations, boost customer
                     experiences or gain new efficiencies, our experts bring a
                     collaborative, solutions-oriented approach. We take the time
@@ -75,15 +75,15 @@ export default function Home() {
               </div>
               <div className="flex gap-[24px]">
                 <div className="h-20 w-20 p-10 rounded-lg bg-[#FFDD1F] flex justify-center items-center  text-2xl">
-                  <span>
+                  <span className="text-[#032B3A] text-2xl">
                     <RiUser5Line />
                   </span>
                 </div>
                 <div className="flex flex-col text-left">
-                  <p className="font-semibold text-[24px]">
+                  <p className="font-semibold text-[24px]  text-[#032B3A]">
                     Customer-Centric Approach
                   </p>
-                  <p className="text-[18px] leading-[24.3px] font-light">
+                  <p className="text-[18px] leading-[24.3px] font-light  text-gray-600">
                     Every business has a unique DNA, which is why we never take
                     a one-size-fits-all approach. We believe deep understanding
                     is key to building impactful solutions.
@@ -92,15 +92,15 @@ export default function Home() {
               </div>
               <div className="flex gap-[24px]">
                 <div className="h-20 w-20 p-10 rounded-lg bg-[#FFDD1F] flex justify-center items-center text-2xl">
-                  <span>
+                  <span className="text-[#032B3A] text-2xl">
                     <SlPuzzle />
                   </span>
                 </div>
                 <div className="flex flex-col text-left">
-                  <p className="font-semibold text-[24px]">
+                  <p className="font-semibold text-[24px] text-[#032B3A]">
                     End-to-End Solutions
                   </p>
-                  <p className="text-[18px] leading-[24.3px] font-light">
+                  <p className="text-[18px] leading-[24.3px] font-light text-gray-600">
                     With our full-spectrum services, you can rest assured that
                     every stage of your project is handled with the utmost
                     professionalism and expertise. Partner with us and
@@ -113,15 +113,15 @@ export default function Home() {
               </div>
               <div className="flex gap-[24px]">
                 <div className="h-20 w-20 p-10 rounded-lg bg-[#FFDD1F] flex justify-center items-center text-2xl">
-                  <span>
+                  <span  className="text-[#032B3A] text-2xl">
                     <RiCustomerService2Fill />
                   </span>
                 </div>
                 <div className="flex flex-col text-left">
-                  <p className="font-semibold text-[24px]">
+                  <p className="font-semibold text-[24px] text-[#032B3A]">
                     Transparent Communication and Collaboration
                   </p>
-                  <p className="text-[18px] leading-[24.3px] font-light">
+                  <p className="text-[18px] leading-[24.3px] font-light  text-gray-600">
                     We believe in open and transparent communication throughout
                     the project lifecycle. We keep you involved and informed at
                     every stage, seeking your input and feedback to ensure that
@@ -145,7 +145,7 @@ export default function Home() {
 
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-[84px] gap-4 py-6 px-6  align-center lg:px-[193px]">
             <div className="flex flex-col gap-6 px-6 text-left E6F0F3">
-              <p className="text-xl md:text-lg  font-bold">
+              <p className="text-xl md:text-lg  font-bold text-gray-600">
                 <span className="text-[#076588] mr-2">Aqmada:</span>
                 Beyond Stocks
               </p>
@@ -159,7 +159,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <p>
+              <p className="text-gray-600">
                 Aqmada provides a comprehensive inventory marketplace solution
                 optimized for commercial businesses,
                 small-sized-and-micro-enterprises, and large institutions and
@@ -170,7 +170,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="flex flex-col gap-6 px-6 text-left">
-              <p className="text-xl md:text-lg font-bold">
+              <p className="text-xl md:text-lg font-bold text-gray-600">
                 <span className="text-[#076588] mr-2">Medeb:</span>
                 Investment Reimagined.
               </p>
@@ -180,7 +180,7 @@ export default function Home() {
                   <p>Coming Soon</p>
                 </div>
               </div>
-              <p>
+              <p className="text-gray-600">
                 Medeb seeks to facilitate the retail for investment offering
                 commission-free trading in Ethiopian-listed stocks and
                 securities.
@@ -190,7 +190,7 @@ export default function Home() {
               </a>
             </div>
             <div className="flex flex-col gap-6 px-6 text-left">
-              <p className="text-xl md:text-lg  font-bold">
+              <p className="text-xl md:text-lg  font-bold text-gray-600">
                 <span className="text-[#076588] mr-2">Agar:</span>
                 Roadside Service.
               </p>
@@ -200,7 +200,7 @@ export default function Home() {
                   <p>Coming Soon</p>
                 </div>
               </div>
-              <p>
+              <p className="text-gray-600">
                 Agar roadside assistance services provide the reliable help you
                 need during vehicle emergencies and breakdowns.
               </p>
@@ -226,7 +226,7 @@ export default function Home() {
                 <p className="font-semibold lg:text-[24px] text-[18px] text-[#076588]">
                   What services does Aqmada offer?
                 </p>
-                <p className="lg:text-[18px] text-[15px] lg:leading-[24.3px] font-light">
+                <p className="lg:text-[18px] text-[15px] lg:leading-[24.3px]  text-gray-600 font-light">
                   Aqmada offers a comprehensive inventory marketplace solution
                   for commercial businesses, small-sized-and-micro-enterprises,
                   and large institutions and industries.
@@ -241,7 +241,7 @@ export default function Home() {
                 <p className="font-semibold lg:text-[24px] text-[18px]  text-[#076588]">
                   What makes Medeb stand out from other investment platforms?
                 </p>
-                <p className="lg:text-[18px] text-[15px] lg:leading-[24.3px] font-light">
+                <p className="lg:text-[18px] text-[15px] lg:leading-[24.3px] font-light  text-gray-600">
                   Medeb is unique in offering commission-free trading for
                   Ethiopian-listed stocks and securities, improving the
                   accessibility of investment opportunities for retail
@@ -258,7 +258,7 @@ export default function Home() {
                 <p className="font-semibold lg:text-[24px] text-[18px] text-[#076588]">
                   Do you handle the entire project lifecycle?
                 </p>
-                <p className="lg:text-[18px] text-[15px] lg:leading-[24.3px] font-light">
+                <p className="lg:text-[18px] text-[15px] lg:leading-[24.3px] font-light  text-gray-600">
                   Absolutely. As a comprehensive tech company and agency, we
                   have the capabilities to handle the entire project lifecycle.
                   From the initial ideation and planning stages to development,
@@ -275,7 +275,7 @@ export default function Home() {
                 <p className="font-semibold lg:text-[24px] text-[18px] text-[#076588]">
                   Will you provide support?
                 </p>
-                <p className="lg:text-[18px] text-[15px] lg:leading-[24.3px] font-light">
+                <p className="lg:text-[18px] text-[15px] lg:leading-[24.3px] font-light  text-gray-600">
                   Our team consists of seasoned professionals with diverse skill
                   sets, allowing us to tackle a wide range of projects with
                   precision and expertise.
@@ -284,7 +284,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center mt-8 font-semibold my-20">
-            <p>
+            <p className=" text-gray-600">
               Haven’t got your answer?
               <Link
                 href="/contact"
