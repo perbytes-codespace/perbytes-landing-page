@@ -39,9 +39,9 @@ export default function Contact() {
     <main className="bg-[#E6F0F3] syne mx-4">
       <div className="text-center lg:px-[8rem] grid grid-cols-1 gap-10 py-[6rem]">
         <div className=" text-center">
-          <p className="text-md font-semibold text-[#06516D]">Let’s start a conversation. </p>
+          <p className="text-md font-semibold text-[#06516D]">Let&apos;s start a conversation. </p>
           <p className="lg:text-[34px] text-lg font-bold text-[#032B3A]">
-            Get in Touch with PerBytes.
+            Get in Touch with Perbytes.
           </p>
           <p className=" text-gray-600 my-4">
             Have a project in mind or just want to learn more about how PerBytes

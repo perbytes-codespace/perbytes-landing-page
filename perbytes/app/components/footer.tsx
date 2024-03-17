@@ -67,7 +67,7 @@ export const  Footer=() => {
         </div>
     </div>
     <div className="flex justify-between py-8 bg-[#043A4E] text-white items-center lg:px-[220px]">
-        <p className="sm:text-xl text-sm">PerBytes Systems, Inc © {year}. <span className='hidden md:inline'>All Rights Reserved.</span></p>
+        <p className="sm:text-xl text-sm">Perbytes Systems, Inc © {year}. <span className='hidden md:inline'>All Rights Reserved.</span></p>
         <p className="sm:text-xl text-sm cursor-pointer flex gap-2 items-center" onClick={backToTop}>
         <IoIosArrowRoundUp /> Back to top
         </p>
