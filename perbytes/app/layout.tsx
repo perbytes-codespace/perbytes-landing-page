@@ -10,15 +10,14 @@ import './globals.css'
 import { Header } from './components/header';
 import { Footer } from './components/footer';
 
-
 export const metadata: Metadata = {
-  title: 'Perbytes',
-}
+  title: "Perbytes",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -30,5 +29,5 @@ export default function RootLayout({
         </main>
       </body>
     </html>
-  )
+  );
 }
