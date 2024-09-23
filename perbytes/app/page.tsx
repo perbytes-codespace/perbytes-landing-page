@@ -308,7 +308,7 @@ export default function Home() {
           <div className="mt-4 lg:mt-0">
             <Link href="/contact">
               <button className="px-6 py-3 bg-[#076588] text-white rounded-lg text-md font-bold">
-                Get started &gt;
+           Get started
               </button>
             </Link>
           </div>

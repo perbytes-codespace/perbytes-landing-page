@@ -23,7 +23,7 @@ export const  Footer=() => {
                 <div className="h-8 w-6">
                     <Image className="h-8 w-6" width={50} height={50} src="/footer-logo.png" alt="logo" />
                 </div>
-                <span className="text-lg">perbytes <span className=" font-semibold">Systems</span></span>
+                <span className="text-lg">perbytes <span className=" font-semibold">systems</span></span>
             </Link>
             <div className="flex gap-2 items">
                 <div className="h-8 w-6">
