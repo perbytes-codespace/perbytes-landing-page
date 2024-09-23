@@ -41,26 +41,15 @@ export default function Contact() {
         <div className=" text-center">
           <p className="text-md font-semibold text-[#06516D]">Let&apos;s start a conversation. </p>
           <p className="lg:text-[34px] text-lg font-bold text-[#032B3A]">
-            Get in Touch with Perbytes.
+            Get in touch with us.
           </p>
           <p className=" text-gray-600 my-4">
-            Have a project in mind or just want to learn more about how PerBytes
+            Have a project in mind or just want to learn more about how perbytes
             can elevate your business? We&apos;re here to help. Reach out to us, and
             let&apos;s start a conversation.
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[80px] my-10">
-          <div className="flex gap-4">
-            <div className="h-20 w-20 p-10 rounded-full bg-[#FFDD1F] flex justify-center items-center">
-              <span className="text-2xl text-[#043A4E]">
-                 <FaPhone />
-              </span>
-            </div>
-            <div className="flex flex-col text-left">
-              <p className="font-semibold text-[24px] text-[#043A4E]">Call us</p>
-              <p className="text-[18px] font-light text-[#043A4E]">+251 91 338 3713</p>
-            </div>
-          </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[80px] my-10">
           <div className="flex gap-4">
             <div className="h-20 w-20 p-10 rounded-full bg-[#FFDD1F] flex justify-center items-center">
               <span className="text-2xl text-[#043A4E]">

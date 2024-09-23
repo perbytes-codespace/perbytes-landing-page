@@ -11,17 +11,17 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="w-screen">
+    <main className="max-w-screen">
       {/* Hero Section */}
       <div className="bg-[url('/bg-sm.png')] sm:bg-[url('/hero.png')] h-screen flex justify-center align-center text-center">
         <div className=" flex flex-col mt-[10rem]  lg:mt-[15rem] lg:px-[120px] gap-4 text-white px-6">
-          <p className="heading text-4xl font-bold tracking-tight lg:text-8xl text-6xl font-display">
+          <p className="heading font-bold tracking-tight lg:text-8xl text-6xl font-display">
             Providing
             <span className="text-[#FFDD1F]"> innovative solutions</span> to
             various problems in the country.
           </p>
           <p className="font-thin text-gray-300 text-xl md:text-4xl sm:text-5xl  lg:px-[120px]">
-            At the core of Perbytes&apos; ethos is the belief that modern
+            At the core of perbytes&apos; ethos is the belief that modern
             technology, when guided responsibly, can uplift communities and
             bring positive transformation.
           </p>
@@ -32,10 +32,10 @@ export default function Home() {
         <div className="my-32">
           <div className="flex flex-col justify-center text-center items-center gap-2 mx-auto px-6 md:px-[80px] sm:px-[220px]">
             <p className="text-[#032B3A] text-3xl font-semibold">
-              Welcome to PerBytes
+              Welcome to perbytes
             </p>
             <p className="sm:text-2xl text-lg font-light dark:text-gray-500">
-              At PerBytes, we&apos;re not just developers; we&apos;re architects
+              At perbytes, we&apos;re not just developers; we&apos;re architects
               of digital experiences. We breathe life into ideas, turning
               concepts into cutting-edge software solutions. Whether you&apos;re
               a startup looking to disrupt the market or an enterprise seeking

@@ -14,10 +14,10 @@ export const Navbar = () => {
             <Image src="/logo.png" alt="logo" width={40} height={40} />
           </div>
           <span className="text-white text-md">
-            Perbytes <span className=" font-semibold">Systems</span>
+            perbytes <span className=" font-semibold">systems</span>
           </span>
         </Link>
-        <div className="flex gap-4 items-center text-white divide-x divide-white  text-md font-semibold hidden sm:flex">
+        <div className="gap-4 items-center text-white divide-x divide-white  text-md font-semibold hidden sm:flex">
           {/* <Link href="about.html">About Us</Link> */}
           <Link href="/contact" className="pl-4">
             Contact

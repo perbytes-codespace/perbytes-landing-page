@@ -11,7 +11,7 @@ import { Header } from './components/header';
 import { Footer } from './components/footer';
 
 export const metadata: Metadata = {
-  title: "Perbytes",
+  title: "perbytes",
 };
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={SyneFont.className}>
-      <main className="bg-[#E6F0F3]">
+      <main className="bg-[#E6F0F3] max-w-screen">
           <Header />
         {children}
         <Footer />

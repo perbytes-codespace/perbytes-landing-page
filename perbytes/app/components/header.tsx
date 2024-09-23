@@ -17,9 +17,7 @@ export const Header = () => {
             <div className="text-sm">
                 <p className="text-sm">info@perbytes.com</p>
             </div>
-            <div className="text-sm">
-                <p className="text-sm">+251 91 338 3713</p>
-            </div>
+          
         </div>
     </div>
 </div>

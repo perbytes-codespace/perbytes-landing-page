@@ -23,7 +23,7 @@ export const  Footer=() => {
                 <div className="h-8 w-6">
                     <Image className="h-8 w-6" width={50} height={50} src="/footer-logo.png" alt="logo" />
                 </div>
-                <span className="text-lg">Perbytes <span className=" font-semibold">Systems</span></span>
+                <span className="text-lg">perbytes <span className=" font-semibold">Systems</span></span>
             </Link>
             <div className="flex gap-2 items">
                 <div className="h-8 w-6">
@@ -38,7 +38,7 @@ export const  Footer=() => {
             </div>
         </div>
         <p className="text-md">
-            PerBytes is a forward-thinking software development company driven by a passion for innovation and a commitment to client success. As architects of digital transformation, we specialize in crafting tailored solutions that empower businesses through cutting-edge technology. Our values of excellence, transparency, innovation, collaboration, and continuous learning are woven into the fabric of our culture, guiding us as we strive to exceed expectations and shape the future of software development. 
+            perbytes is a forward-thinking software development company driven by a passion for innovation and a commitment to client success. As architects of digital transformation, we specialize in crafting tailored solutions that empower businesses through cutting-edge technology. Our values of excellence, transparency, innovation, collaboration, and continuous learning are woven into the fabric of our culture, guiding us as we strive to exceed expectations and shape the future of software development. 
         </p>
         </div>
         <div className="flex gap-4 my-4">
@@ -67,7 +67,7 @@ export const  Footer=() => {
         </div>
     </div>
     <div className="flex justify-between py-8 bg-[#043A4E] text-white items-center lg:px-[220px]">
-        <p className="sm:text-xl text-sm">Perbytes Systems, Inc © {year}. <span className='hidden md:inline'>All Rights Reserved.</span></p>
+        <p className="sm:text-xl text-sm">perbytes systems, Inc © {year}. <span className='hidden md:inline'>All Rights Reserved.</span></p>
         <p className="sm:text-xl text-sm cursor-pointer flex gap-2 items-center" onClick={backToTop}>
         <IoIosArrowRoundUp /> Back to top
         </p>
