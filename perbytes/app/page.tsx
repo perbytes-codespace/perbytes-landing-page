@@ -8,28 +8,54 @@ import { RiUser5Line } from "react-icons/ri";
 import { SlPuzzle } from "react-icons/sl";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import Link from "next/link";
+import { InteractiveMarquee } from "./components/textslider";
 
 export default function Home() {
   return (
     <main className="max-w-screen">
       {/* Hero Section */}
       <div className="bg-[url('/bg-sm.png')] sm:bg-[url('/hero.png')] h-screen flex justify-center align-center text-center">
-        <div className=" flex flex-col mt-[10rem]  lg:mt-[15rem] lg:px-[120px] gap-4 text-white px-6">
-          <p className="heading font-bold tracking-tight lg:text-8xl text-6xl font-display">
+        <div className=" flex flex-col mt-[10rem]  xl:mt-14 lg:mt-[15rem] lg:px-[120px] gap-4 text-white px-6">
+          <p className="heading font-bold tracking-tight xl:text-7xl lg:text-8xl text-6xl font-display">
             Providing
             <span className="text-[#FFDD1F]"> innovative solutions</span> to
             various problems in the country.
           </p>
-          <p className="font-thin text-gray-300 text-xl md:text-4xl sm:text-5xl  lg:px-[120px]">
+          <p className="font-thin text-gray-300 text-xl  md:text-4xl sm:text-5xl  lg:px-[120px]">
             At the core of perbytes&apos; ethos is the belief that modern
             technology, when guided responsibly, can uplift communities and
             bring positive transformation.
           </p>
         </div>
       </div>
+      <div className="flex flex-col text-center my-10">
+      <p className="text-gray-700 text-2xl font-semibold">
+        Trusted by
+      </p>
+      <InteractiveMarquee >
+        <div className="flex gap-4 py-6 font-semibold">
+        <p>
+        Edison Bulb Manufacturing.
+        </p>
+        <p>
+        ABK Kids.
+        </p>
+        <p>
+        Nibret Properties. 
+        </p>
+        <p>
+        Joy parkfly. 
+        </p>
+        <p>
+        Metro parkfly.
+        </p>
+        </div>
+        </InteractiveMarquee>
+      </div>
+
       <div className="grid grid-cols-1 gap-6">
         {/* About Us Section */}
-        <div className="my-32">
+        <div className="mb-20">
           <div className="flex flex-col justify-center text-center items-center gap-2 mx-auto px-6 md:px-[80px] sm:px-[220px]">
             <p className="text-[#032B3A] text-3xl font-semibold">
               Welcome to perbytes
@@ -52,7 +78,7 @@ export default function Home() {
                 People choose us because we serve the best for everyone.
               </p>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[80px] mt-4 lg:px-[193px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[80px] mt-4 xl:px-10 lg:px-[193px]">
               <div className="flex gap-[24px]">
                 <div className="h-20 w-20 p-10 rounded-lg bg-[#FFDD1F] flex justify-center items-center text-2xl">
                   <span className="text-[#032B3A] text-2xl">
@@ -143,7 +169,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-[84px] gap-4 py-6 px-6  align-center lg:px-[193px]">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-[84px] gap-4 py-6 px-6  align-center xl:px-10 lg:px-[193px]">
             <div className="flex flex-col gap-6 px-6 text-left E6F0F3">
               <p className="text-xl md:text-lg  font-bold text-gray-600">
                 <span className="text-[#076588] mr-2">Aqmada:</span>
@@ -210,7 +236,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col px-6 lg:px-[193px] px-6 gap-2 sm:text-center ">
+        <div className="flex flex-col px-6 xl:px-14 lg:px-[193px] px-6 gap-2 sm:text-center ">
           <div className="text-[#032B3A] mb-4">
             <p className="lg:text-[48px] lg:leading-[57.6px] text-2xl font-bold">
               Frequently Asked Questions
@@ -301,8 +327,7 @@ export default function Home() {
               Ready to launch your next project?
             </p>
             <p className="text-[#032B3A] text-md">
-              With lots of unique blocks, you can easily build a page without
-              coding. Build your next landing page.
+              Book a demo we will reach out to you as soon as possible.
             </p>
           </div>
           <div className="mt-4 lg:mt-0">

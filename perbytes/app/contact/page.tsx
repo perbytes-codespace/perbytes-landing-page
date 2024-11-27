@@ -136,7 +136,7 @@ export default function Contact() {
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 ></textarea>
               </div>
-              <div className="grid grid-cols-2 ">
+              <div className="grid grid-cols-1">
                 {
                   loading ? (
                     <input

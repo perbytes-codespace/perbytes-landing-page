@@ -1,0 +1,52 @@
+html,
+body {
+  overscroll-behavior-x: none;
+}
+
+.text-slider {
+    overflow: hidden;
+ 
+  }
+  
+.loader {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.marquee {
+  display: flex;
+  /* height: 100vh; */
+  align-items: center;
+  cursor: -webkit-grab;
+  z-index: 1;
+}
+
+.item {
+  font-size: 2rem;
+  letter-spacing: -0.05em;
+  padding-right: 0.25em;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+  color: #076588
+}
+
+.drag {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+a {
+  user-select: none;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; 
+  cursor: grab;
+}

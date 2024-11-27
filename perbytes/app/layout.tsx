@@ -7,11 +7,12 @@ const SyneFont = Inter({
 })
 
 import './globals.css'
+import '@/app/slider.css'
 import { Header } from './components/header';
 import { Footer } from './components/footer';
 
 export const metadata: Metadata = {
-  title: "perbytes",
+  title: "Perbytes  Systems Inc.,",
 };
 
 export default function RootLayout({
