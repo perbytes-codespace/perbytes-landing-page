@@ -14,9 +14,9 @@ export default function Home() {
   return (
     <main className="max-w-screen">
       {/* Hero Section */}
-      <div className="bg-[url('/bg-sm.png')] sm:bg-[url('/hero.png')] h-screen flex justify-center align-center text-center">
-        <div className=" flex flex-col mt-[10rem]  xl:mt-14 lg:mt-[15rem] lg:px-[120px] gap-4 text-white px-6">
-          <p className="heading font-bold tracking-tight xl:text-7xl lg:text-8xl text-6xl font-display">
+      <div className="bg-[url('/bg-sm.png')] sm:bg-[url('/hero.png')] h-lvh py-20 flex justify-center align-center text-center">
+        <div className=" flex flex-col gap-4 text-white justify-center align-center  md:w-[80%]">
+          <p className="heading font-bold tracking-tight lg:text-8xl text-6xl font-display">
             Providing
             <span className="text-[#FFDD1F]"> innovative solutions</span> to
             various problems in the country.
@@ -28,7 +28,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col text-center my-10">
+      <div className="flex flex-col text-center my-10 lg:my-6">
       <p className="text-gray-700 text-2xl font-semibold">
         Trusted by
       </p>
@@ -48,6 +48,9 @@ export default function Home() {
         </p>
         <p>
         Metro parkfly.
+        </p>
+        <p>
+        Sabawi Technologies.
         </p>
         </div>
         </InteractiveMarquee>

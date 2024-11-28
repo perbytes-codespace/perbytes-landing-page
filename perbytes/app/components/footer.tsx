@@ -23,7 +23,7 @@ export const  Footer=() => {
                 <div className="h-8 w-6">
                     <Image className="h-8 w-6" width={50} height={50} src="/footer-logo.png" alt="logo" />
                 </div>
-                <span className="text-lg">Perbytes<span className=" font-semibold">Systems Inc.,</span></span>
+                <span className="text-lg">Perbytes <span className=" font-semibold">Systems Inc.,</span></span>
             </Link>
             <div className="flex gap-2 items">
                 <div className="h-8 w-6">
@@ -72,7 +72,7 @@ export const  Footer=() => {
         </div>
     </div>
     <div className="flex justify-between py-8 bg-[#043A4E] text-white items-center lg:px-[220px]">
-        <p className="sm:text-xl text-sm">PerbytesSystems, Inc © {year}. <span className='hidden md:inline'>All Rights Reserved.</span></p>
+        <p className="sm:text-xl text-sm">Perbytes Systems, Inc © {year}. <span className='hidden md:inline'>All Rights Reserved.</span></p>
         <p className="sm:text-xl text-sm cursor-pointer flex gap-2 items-center" onClick={backToTop}>
         <IoIosArrowRoundUp /> Back to top
         </p>
